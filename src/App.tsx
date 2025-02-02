@@ -1,4 +1,4 @@
-import { BrowserRouter, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 
 import "@mantine/core/styles.css";
@@ -18,10 +18,8 @@ export default function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/portifolio">
-      <Container size="xl">
-        <Outlet />
-      </Container>
-    </BrowserRouter>
+    <Container size="xl">
+      <Outlet />
+    </Container>
   );
 }
