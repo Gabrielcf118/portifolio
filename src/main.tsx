@@ -8,7 +8,7 @@ import { MantineEmotionProvider } from "@mantine/emotion";
 createRoot(document.getElementById("root")!).render(
   <MantineProvider theme={theme}>
     <MantineEmotionProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="https://github.com/Gabrielcf118/portifolio.git">
         <Router />
       </BrowserRouter>
     </MantineEmotionProvider>
